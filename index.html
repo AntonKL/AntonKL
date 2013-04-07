@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Startsida!
+keywords: Knatte, Fnatte, Tjatte
 ---
 <section>
 {% for post in paginator.posts %}
@@ -9,6 +10,7 @@ title: Startsida!
       <span>{{ post.date | date_to_long_string }}</span>
     </div>
     <h1>{{ post.title | capitalize }}</h1>
+    {{ post.content | split: '<!-- more -->' | first }}
     <a href="{{ post.url }}">Läs mer...</a>
   </article>
 {% endfor %}
