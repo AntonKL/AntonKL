@@ -61,6 +61,8 @@ header
   #logo
     a
       color lighten(base_font_color, 15%)
+      font-family brandon_grotesquebold
+      text-transform uppercase
 
 nav
   margin-bottom 2em
@@ -70,13 +72,7 @@ nav
     margin 0
   li
     display inline
-    margin-right 0.5em
-
-.blogfeed
-  h1
-    font-family brandon_grotesquebold
-    font-size: 1.7em
-    text-transform uppercase
+    margin-right 0.8em
 
 article
   border-top 1px solid #EEE
@@ -109,6 +105,7 @@ article
 footer
   text-align center
   margin-top 1em
+  
   a#octocat
     background url(/img/octocat.svg) no-repeat
     display block
@@ -116,7 +113,7 @@ footer
     height 39px
     width 39px
     margin auto
-  :hover
+  #octocat:hover
     opacity: 1
     transition: 0.5s opacity
 
@@ -142,7 +139,7 @@ article
 
   #datewrapper
     left 0
-    top -10px
+    top -8px
 
   
 endbp()

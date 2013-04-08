@@ -1,6 +1,6 @@
 ---
+title: Om mig
 layout: default
-title: Kontakta mig
 ---
 
 Hej, jag heter Anton Kjörck Lindén. Jag är en stokholmsbaserad gränssnittsutvecklare. Om dagarna arbetar jag på varumärkes- och designbyrån Novium.
