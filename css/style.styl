@@ -1,6 +1,8 @@
 @import '/jeet/framework'
 @import '/jeet/goodies'
 @import '/jeet/typography'
+@import '/jeet/typography'
+@import 'pygments'
 
 @font-face {
     font-family: 'brandon_grotesque_regularRg';
@@ -31,22 +33,18 @@ body
   background #fafafa
   word-wrap: break-word;
 
-ul
-  padding 0
-  margin 0
-
 hr
   border-style none
   border-width 0
   border-top: 1px solid #EEE
 
-h1
-  font-family brandon_grotesquebold
-  font-size: 1.7em
-  text-transform uppercase
-
 p
   margin-bottom 1em
+
+pre
+  background #eee
+  border 1px solid #d5d5d5
+  padding 8px 32px
 
 .done
   text-decoration line-through
@@ -68,9 +66,17 @@ nav
   margin-bottom 2em
   ul
     text-align center
+    padding 0
+    margin 0
   li
     display inline
     margin-right 0.5em
+
+.blogfeed
+  h1
+    font-family brandon_grotesquebold
+    font-size: 1.7em
+    text-transform uppercase
 
 article
   border-top 1px solid #EEE
@@ -94,10 +100,12 @@ article
 
 #pagination
   text-align center
-  ul,
+  ul
+    display inline
+    padding 0
+    margin 0
   li
     display inline
-
 footer
   text-align center
   margin-top 1em
